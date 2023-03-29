@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+#header{
+    background-color:#003580;
+    padding-top: 20px;
+    height: 350px;
+}
+#line1{
+    display: flex;
+    width: 80%;
+    margin: auto;    
+}
+#line1a{
+    width: 40%;
+}
+#logo{
+    width: 20%;
+}
+#line1b{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    color: white;
+}
+#line1b>h4{
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    margin:0 10px ;
+}
+#line1b>h4:hover{
+    background-color: #27538f;
+    color: white;
+}
+#ind{
+    width: 20%;
+    height: 30%;
+    border-radius: 60%;
+    margin-top: 5px;
+}
+#rg{
+    background-color: white;
+    color:#003580 ;
+}
+
+#line2{
+    width: 80%;
+    margin:0 auto;
+}
+#line2>a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+}
+#line2>a:hover{
+    background-color: #27538f;
+}
+#line3>h1{
+    color: white;
+    width: 80%;
+    margin:50px auto 0px;
+    font-size: 50px;
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+#line4>p{
+    color: white;
+    font-size: 25px;
+    width: 80%;
+    margin:2px auto;
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+/* -----------------nav bar------------------------------- */
+
+#search{
+    width: 60%;
+    margin: auto;
+    margin-top: -30px;
+}
+#search>input{
+width: 70%;
+height: 50px;
+font-size: 17px;
+border: 3px solid #febb02;
+}
+#search>button{
+    width: 25%;
+    height: 57px;
+    background-color: #27538f;
+    border: 3px solid #febb02;
+    color: white;
+    font-size: 20px;
+}
+#search>button:hover{
+    background-color:#003580;
+}
+#offer{
+   text-align: center;
+   margin: 20px 0px;
+}
+
+#place{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#place>div{
+    margin: 10px;
+}
+#place>div>img{
+    width: 100%;
+    height:300px;  
+}
+#place>div>h2{
+    color: white;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 1;
+}
+#place>div>div{
+    margin-top: -60px;
+    margin-left: 370px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: #ff8000;
+    text-align: center;
+    border: none;
+    padding: 2px;
+}
+#place>div>div>h4{
+    margin: 0px;
+}
+
+#place2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#place2>div{
+    margin: 10px;
+    width: 40%;
+}
+#place2>div>img{
+    width: 100%;
+    height:300px;  
+}
+#place2>div>h2{
+    color: white;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 1;
+}
+#place2>div>div{
+    margin-top: -60px;
+    margin-left:210px;
+    position: absolute;
+    z-index: 1;
+    border: 1px solid black;
+    background-color: #ff8000;
+    text-align: center;
+    border: none;
+    padding: 2px;
+}
+#place2>div>div>h4{
+    margin: 0px;
+}
+#ex{
+    width: 80%;
+    margin:20px auto;
+}
+
+#place3{
+    width: 80%;
+    margin:10px auto 40px;
+    display: flex;
+}
+#place3>div{
+    margin: 5px;
+}
+#place3>div>h3,p{
+    margin: 2px;
+}
+p{
+    color: #484646;
+}
+#place4{
+    width: 80%;
+    margin:10px auto 40px;
+    display: flex;
+}
+#place4>div{
+    margin: 5px;
+}
+#place4>div>img{
+    width: 100%;
+}
+#place4>div>h3,p{
+    margin: 2px;
+}
+
+#dis{
+    border: 1px solid black;
+    padding: 14px;
+    border: none;
+    background-color: rgb(247, 236, 236);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#place5{
+    width: 80%;
+    margin:10px auto 40px;
+    display: flex;
+}
+#place5>div{
+    margin: 5px;
+}
+#place5>div>img{
+    width: 100%;
+}
+#place5>div>h3,p{
+    margin: 2px;
+}
+#subs{
+    border: 1px solid black;
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #003580;
+    color: white;
+}
+#subs>input{
+    width: 25%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#subs>button{
+    width: 10%;
+    height: 55px;
+    font-size: 20px;
+    background-color: #3f88ef;
+    border: none;
+    border-radius: 5px;
+}
+#subs>button:hover{
+    background-color: #095dd2;
+}
+
+#anchor{
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: #003580;
+    text-align: center;
+}
+#anchor>a{
+    color: white;
+   margin: 15px;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+#footer>div>a{
+    text-decoration: none;
+    color: #003580;
+}
+#last{
+    margin: 20px;
+    text-align: center;
+}
+#partner{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin:40px auto;
+}
