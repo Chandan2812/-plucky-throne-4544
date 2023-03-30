@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+#header{
+    background-color:#003580;
+    padding-top: 20px;
+    height: 120px;
+}
+#line1{
+    display: flex;
+    width: 80%;
+    margin: auto;    
+}
+#line1a{
+    width: 40%;
+}
+#logo{
+    width: 20%;
+}
+#line1b{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    color: white;
+}
+#line1b h4{
+    font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 10px 5px 0px 5px;
+    margin:0 10px ;
+}
+#line1b>h4:hover{
+    background-color: #27538f;
+    color: white;
+}
+#ind{
+    width: 20%;
+    height: 30%;
+    border-radius: 60%;
+    margin-top: 5px;
+}
+#rg{
+    background-color: white;
+    color:#003580 ;
+}
+#rg>a{
+    text-decoration: none;
+}
+#rg>a:hover{
+    color: white;
+}
+
+#line2{
+    width: 80%;
+    margin:0 auto;
+}
+#line2>a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+}
+#line2>a:nth-child(3)
+{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#line2>a:hover{
+    background-color: #27538f;
+}

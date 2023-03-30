@@ -1,0 +1,501 @@
+[
+    {
+        "id":1,
+        "name":"Locul.Midtown-Indiranagar",
+        "Address":"346 Ridgeway Drive",
+        "city":"Bangalore",
+        "bed":4,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/373359793.webp?k=55c362eec177cbbe3538e8a8288101efb285a5b122d31b950c857b48a287e133&o=&s=1",
+        "price":620
+    },
+    {   
+        "id":2,
+        "name":"BNGV Mystic Premier Hotel",
+        "Address":"13121 Valley Edge Plaza",
+        "city":"Bangalore",
+        "bed":3,"rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/291454874.webp?k=78c8c05331846c01357781c66c9038d9d145accae0bea2fbb81905e6d9dd8fce&o=&s=1",
+        "price":730
+    },
+    {
+        "id":3,
+        "name":"Bloom Hotel - Bengaluru Airport",
+        "Address":"3 Forest Run Circle",
+        "city":"Bangalore",
+        "bed":2,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/430695517.webp?k=5fd682f628c8eb9cd25c51736fb58b6e5868e3e739bdfbf42bf2fd445f8781b9&o=&s=1",
+        "price":"551"
+    },
+    {
+        "id":4,
+        "name":"Hotel Chetan International",
+        "Address":"78978 Schlimgen Lane",
+        "city":"Bangalore",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/332182661.webp?k=6a1a1a9914e5c1e7f1abf192ae1424d90940cc2feed2fc5ac1381decab99d109&o=&s=1",
+        "price":"923"
+    },
+    {
+        "id":5,
+        "name":"StayhomeStays PrimeOpens in new window",
+        "Address":"3 Truax Street",
+        "city":"Bangalore",
+        "bed":3,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/391522110.webp?k=d0612bea419ff595b14f12c081267d40843f7e9465096d362ec21a0f7ab7a6d4&o=&s=1",
+        "price":761
+    },
+    {
+        "id":6,
+        "name":"Holiday Inn Bengaluru Racecourse",
+        "Address":"5630 Emmet Circle",
+        "city":"Bangalore",
+        "bed":3,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/251221932.webp?k=302093977de4a826b9de87f0fafdb5a1d18b03fddc8bc0308059b7c4ae2ea36e&o=&s=1",
+        "price":740
+    },
+    {
+        "id":7,
+        "name":"Hotel Comfort Park ",
+        "Address":"05 Fremont Lane",
+        "city":"Chennai",
+        "bed":3,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/405792380.webp?k=a768a77378805e000aac7a0a5d4fa216e8016ff99910833df71de3c86e7aba5c&o=&s=1",
+        "price":780
+    },
+    {
+        "id":8,
+        "name":"KSquare HotelOpens",
+        "Address":"7366 American Crossing",
+        "city":"Chennai",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/173420867.webp?k=2731bed745f6a66694596ddf3d7542a05bf6e6e5557c184bd9b06170bd5872c9&o=&s=1",
+        "price":"745.69"
+    },
+    {
+        "id":9,
+        "name":"Hotel MM'S Chennai Gateway",
+        "Address":"628 Schurz Center",
+        "city":"Chennai",
+        "bed":4,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/423257312.webp?k=3c04bb7749580a908f120ba48dbbfd4edd00437607109ecd2de9338ccfab6f6a&o=&s=1",
+        "price":600
+    },
+    {
+        "id":10,
+        "name":"Citadines OMR Chennai",
+        "Address":"5 Russell Way",
+        "city":"Chennai",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/283973079.webp?k=f3275c6aa11e3d8fe9e9168a6a5b3d4e262b3a5369f580dbe0541ed7a91ff190&o=&s=1",
+        "price":879
+    },
+    {
+        "id":11,
+        "name":"Novotel Chennai Chamiers Road",
+        "Address":"3426 Jenifer Lane",
+        "city":"Chennai",
+        "bed":3,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/225012476.webp?k=467c9722357f4126cb08eedb81c337f0a5b75f48d19f76baff55115f365767d9&o=&s=1",
+        "price":617
+    },
+    {
+        "id":12,
+        "name":"Novotel Chennai OMR",
+        "Address":"57 Corben Terrace",
+        "city":"Chennai",
+        "bed":1,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/117993839.webp?k=feb88defa5cea1f227103bfc4c2a1c65a5a4d084ab9155b3952155f9a43b7384&o=&s=1",
+        "price":940
+    },
+    {
+        "id":13,
+        "name":"Southern Star,Mysore",
+        "Address":"83135 Declaration Trail",
+        "city":"Mysore",
+        "bed":1,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/268431654.webp?k=e5a925beaae9f2b26919417a5482a1563748a058fb5029726de5517df27938c1&o=&s=1",
+        "price":657
+    },
+    {
+        "id":14,
+        "name":"Fortune JP Palace",
+        "Address":"1869 Loeprich Plaza",
+        "city":"Mysore",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/115492687.webp?k=7f918d7c9291140462529b1bc9d7f7a770d30863ad24f52d81af71a7cb72dec0&o=&s=1",
+        "price":838
+    },
+    {
+        "id":15,
+        "name":"Parklane Hotel",
+        "Address":"670 Kings Crossing",
+        "city":"Mysore",
+        "bed":2,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/45883483.webp?k=b9da7462528ffbcd4be4d8f3dfbeef67092660a6798a62bf1b52437240e93819&o=&s=1",
+        "price":683
+    },
+    {
+        "id":16,
+        "name":"Grand Mercure Mysore",
+        "Address":"7 Crescent Oaks Trail",
+        "city":"Mysore",
+        "bed":2,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/252216179.webp?k=15456760eac0b1415211667adf09edbd76ddfb69278fdb5e51709e53bab2c4fa&o=&s=1",
+        "price":871
+    },
+    {
+        "id":17,
+        "name":"Heritage Inn",
+        "Address":"52 Lerdahl Junction",
+        "city":"Mysore",
+        "bed":3,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/213493534.webp?k=0c332b8f91567b1b35319c4cc995a6ae103da4b82414d1e6c32082e1fdef96c9&o=&s=1",
+        "price":948
+    },
+    {
+        "id":18,
+        "name":"Ambaari hotel",
+        "Address":"8 Texas Junction",
+        "city":"Mysore",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/334419542.webp?k=4c78a2743c6c8e49ca044e45cf02601ca0154d1a36c22179bd7da5eff59b2d8f&o=&s=1",
+        "price":872
+    },
+    {
+        "id":19,
+        "name":"The Turtle Hotel And Resort",
+        "Address":"88531 Vahlen Hill",
+        "city":"Mumbai",
+        "bed":2,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/434697604.webp?k=2d428784a533e965d4a2ee9ccdb1672945bc78f56de38a6661bcc9374ba3ef0b&o=&s=1",
+        "price":732
+    },
+    {
+        "id":20,
+        "name":"Holiday Inn",
+        "Address":"05417 Harbort Circle",
+        "city":"Mumbai",
+        "bed":4,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/233914439.webp?k=41318c9f33e57e01b3287cef7ae39ad5e7d974e8b33d56118d30e1b1d9760c0c&o=&s=1",
+        "price":798
+    },
+    {
+        "id":21,
+        "name":"Trident Bandra Kurla",
+        "Address":"6166 Alpine Hill",
+        "city":"Mumbai",
+        "bed":1,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/33034375.webp?k=5bf47000fdc908ecd313f8d8ec238b6da6843b6e948b9ab0b678dab062ccff6a&o=&s=1",
+        "price":543
+    },
+    {
+        "id":22,
+        "name":"The Oberoi Mumbai",
+        "Address":"97 Rigney Road",
+        "city":"Mumbai",
+        "bed":1,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/25339753.webp?k=922c244a90261191570adab72f806c4a66d66903fb389b4f7d3bafe0cc57e843&o=&s=1",
+        "price":853
+    },
+    {
+        "id":23,
+        "name":"YMCA International House",
+        "Address":"162 Hoepker Alley",
+        "city":"Mumbai",
+        "bed":3,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/137636839.webp?k=41c32d47fd16a5fd9e96eb1872ff03f7aecf2097173df71d75998c5cb6593af5&o=&s=1",
+        "price":883
+    },
+    {
+        "id":24,
+        "name":"Novotel Mumbai Juhu Beach",
+        "Address":"3117 Crowley Lane",
+        "city":"Mumbai",
+        "bed":4,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/252005217.webp?k=0174ad59c10bc596587ff804a4ce96bf983b135e4cc72921ef0a30f397061da4&o=&s=1",
+        "price":665
+    },
+    {
+        "id":25,
+        "name":"Playotel Inn Scheme",
+        "Address":"37 Sommers Junction",
+        "city":"Indore",
+        "bed":4,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/345742266.webp?k=a1b26e38286e7bd432be5f2360b06317c2b7ffce949eb059b48176fe23c202cd&o=&s=1",
+        "price":631
+    },
+    {
+        "id":26,
+        "name":"Essentia Luxury Hotel Indore",
+        "Address":"4 Russell Hill",
+        "city":"Indore",
+        "bed":2,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/345742266.webp?k=a1b26e38286e7bd432be5f2360b06317c2b7ffce949eb059b48176fe23c202cd&o=&s=1",
+        "price":800
+    },
+    {
+        "id":27,
+        "name":"Indore Marriott Hotel",
+        "Address":"9 Granby Center",
+        "city":"Indore",
+        "bed":2,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/128002981.webp?k=2db93fd961f850941b5be21e6e9cf49383fcfa6ec990ce720c17b1e9da0c4391&o=&s=1",
+        "price":699
+    },
+    {
+        "id":28,
+        "name":"Hotel Emporio",
+        "Address":"71 Dapin Pass",
+        "city":"New Delhi",
+        "bed":4,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/115565009.webp?k=205883373e13d3dadc9319d194602f2b60425d2f6ae4a6643ce69a621dfc3933&o=&s=1",
+        "price":854
+    },
+    {
+        "id":29,
+        "name":"Hotel Smart Plaza",
+        "Address":"5 Aberg Hill",
+        "city":"New Delhi",
+        "bed":3,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/407800906.webp?k=f7e10ea456f75f5a090f186bd7f724c449983c5b863b7463edf19214e56428c2&o=&s=1",
+        "price":612
+    },
+    {
+        "id":30,
+        "name":"Radisson Blu Plaza",
+        "Address":"5 Armistice Parkway",
+        "city":"New Delhi",
+        "bed":4,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/232818648.webp?k=9b6c203d4bd97087daf7dd68b4c48df1709f3a20e9d5f9958389781e6b6e1843&o=&s=1",
+        "price":805
+    },
+    {
+        "id":31,
+        "name":"B Nineteen",
+        "Address":"9 Northridge Court",
+        "city":"New Delhi",
+        "bed":3,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/36731001.webp?k=5dec4c7556b8be42e2b7ea95bf1eafe4c34ac1704e3727d33030833c755d75e3&o=&s=1",
+        "price":826
+    },
+    {
+        "id":32,
+        "name":"Novotel New Delhi",
+        "Address":"00171 Dunning Court",
+        "city":"New Delhi",
+        "bed":1,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/252166334.webp?k=f901b95c43e19db38d473d9d2137fb5c6a7541ca3fbc4d4f0c51d88dbc28afa9&o=&s=1",
+        "price":551
+    },
+    {
+        "id":33,
+        "name":"Fairfield by Marriott Kolkata",
+        "Address":"1630 Dennis Point",
+        "city":"Kolkata",
+        "bed":2,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/232700425.webp?k=615de91f3bec765544167e9b64716465ba581186522beafe1bb1ffa3bc31d3bc&o=&s=1",
+        "price":625
+    },
+    {
+        "id":34,
+        "name":"Lakeside Suites",
+        "Address":"89289 Arkansas Trail",
+        "city":"Kolkata",
+        "bed":3,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/414222734.webp?k=eb8fb675fc045c0d0f129f65c1369c31fcd787e3cc0a8782d3b9d9fb66a1718b&o=&s=1",
+        "price":622
+    },
+    {
+        "id":35,
+        "name":"ITC Royal Bengal",
+        "Address":"26 Eastwood Park",
+        "city":"Kolkata",
+        "bed":1,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/202985858.webp?k=aac3959074cc08a614f66757797ff0e1189164505dcc92100276778a46447f28&o=&s=1",
+        "price":769
+    },
+    {
+        "id":36,
+        "name":"The Oberoi Grand Kolkata",
+        "Address":"8 Jenna Street",
+        "city":"Kolkata",
+        "bed":4,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/32092064.webp?k=179e807ba4f14976046756109a3a7da5b78761e9e14fd59a3717a909d233d8de&o=&s=1",
+        "price":735
+    },
+    {
+        "id":37,
+        "name":"Summit Swiss Heritage",
+        "Address":"98 Debra Point",
+        "city":"Darjeeling",
+        "bed":2,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/440541310.webp?k=fc64682defc006c013ea7093ecf6381d6e7407d48fbfc8304a663546e25891a5&o=&s=1",
+        "price":992
+    },
+    {
+        "id":38,
+        "name":"Casa Inn",
+        "Address":"692 Fuller Center",
+        "city":"Goa",
+        "bed":3,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/240894978.webp?k=0f1d1ffa7da63618b66e856de8e4d1faddf33377798e3ea9b6a0caf88ef981b7&o=&s=1",
+        "price":627
+    },
+    {
+        "id":39,
+        "name":"Kenilworth Resort",
+        "Address":"00009 Manitowish Hill",
+        "city":"Goa",
+        "bed":4,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/251593997.webp?k=c46a704d1fbdd907307eea6d48bd7fa9e7969f2d20bd2f3e5448af9a08a4c0f9&o=&s=1",
+        "price":951
+    },
+    {
+        "id":40,
+        "name":"The Treat Hotel",
+        "Address":"2 Fisk Trail",
+        "city":"Goa",
+        "bed":1,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/286410330.webp?k=70b55160d4ce0f11e065e904e28e58bb4bab51ea770000bd533fd80b59316a3f&o=&s=1",
+        "price":533
+    },
+    {
+        "id":41,
+        "name":"Hotel Holiday Resort",
+        "Address":"023 Mesta Center",
+        "city":"Puri",
+        "bed":3,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/88931668.webp?k=b95381bede04be2f870a098e259e4e837c0c491e4cf3afd6956a17a634462e69&o=&s=1",
+        "price":659
+    },
+    {
+        "id":42,
+        "name":"Hotel Dream Holidays",
+        "Address":"3855 Lukken Road",
+        "city":"Puri",
+        "bed":2,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/411293433.webp?k=511478382a3a73f5e0dd0e42ad3a3bb479f27898186df000b13b3a88167fa00c&o=&s=1",
+        "price":946
+    },
+    {
+        "id":43,
+        "name":"Siddhi Vinayak inn",
+        "Address":"34 Wayridge Crossing",
+        "city":"Puri",
+        "bed":3,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/427166527.webp?k=04a48491542153de4fd0f9c2444d8f4d00742bfbfc5a1662dc0570e3d44600df&o=&s=1",
+        "price":875
+    },
+    {
+        "id":44,
+        "name":"The Hosteller Narkanda",
+        "Address":"189 Meadow Ridge Road",
+        "city":"Himachal Pradesh",
+        "bed":4,
+        "rating":3,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/412677366.webp?k=3a9da83e02889be2e5dacc902dfd0bcc283b739cd159f7543c690483a2d83b03&o=&s=1",
+        "price":916
+    },
+    {
+        "id":45,
+        "name":"Himalayan Riverside Resort",
+        "Address":"3421 Lotheville Street",
+        "city":"Himachal Pradesh",
+        "bed":3,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/421912191.webp?k=9331d47e37fe51a5520ffe01f430bcdbb41eb0c4ea6a6b5808125fbfde62377c&o=&s=1",
+        "price":898
+    },
+    {
+        "id":46,
+        "name":"New Purnima Inn",
+        "Address":"090 Elka Way",
+        "city":"Himachal Pradesh",
+        "bed":2,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/420935580.webp?k=aed67dd08725c1ee804d66149df50e18b69f5ff5290574e22c579c7265e025d2&o=&s=1",
+        "price":702
+    },
+    {
+        "id":47,
+        "name":"North Seven",
+        "Address":"73860 Stephen Drive",
+        "city":"Cochin",
+        "bed":4,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/257018287.webp?k=ee1a7f07484db1610b1e05f966ee41165e390679da0495e6688216dc149db209&o=&s=1",
+        "price":633
+    },
+    {
+        "id":48,
+        "name":"Casino Hotel",
+        "Address":"6233 Dahle Lane",
+        "city":"Cochin",
+        "bed":4,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/230754807.webp?k=e1d0ee228a3acbe32e6f2f889471e5d8af1640f2154b6eb9c9952a3074922ff6&o=&s=1",
+        "price":540
+    },
+    {
+        "id":49,
+        "name":"Dutch Bungalow",
+        "Address":"780 Eastlawn Junction",
+        "city":"Cochin",
+        "bed":4,
+        "rating":4,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/199903852.webp?k=e26baac138f09f9b397c727397e9a1f1d4391ab0bde98c854c454ad91a579299&o=&s=1",
+        "price":685
+    },
+    {
+        "id":50,
+        "name":"Bolgatty Palace & Island Resort",
+        "Address":"1992 Schmedeman Plaza",
+        "city":"Cochin",
+        "bed":2,
+        "rating":5,
+        "image":"https://cf.bstatic.com/xdata/images/hotel/square200/85238241.webp?k=110d3e666f535df599c4a1cd4e35027aa14f1df49fba7f10aacbdbc92169590e&o=&s=1",
+        "price":798
+    }
+]
