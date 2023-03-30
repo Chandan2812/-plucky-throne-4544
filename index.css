@@ -26,7 +26,7 @@ body{
     
     color: white;
 }
-#line1b>h4{
+#line1b h4{
     font-family:BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     width: 100%;
     height: 50%;
@@ -48,6 +48,12 @@ body{
     background-color: white;
     color:#003580 ;
 }
+#rg>a{
+    text-decoration: none;
+}
+#rg>a:hover{
+    color: white;
+}
 
 #line2{
     width: 80%;
@@ -58,6 +64,11 @@ body{
     text-decoration: none;
     padding: 10px 15px 10px 15px;
     font-size: 15px;
+}
+#line2>a:nth-child(1)
+{
+    border: 1px solid white;
+    border-radius:20px ;
 }
 #line2>a:hover{
     background-color: #27538f;
