@@ -28,8 +28,9 @@
                 </label>
                 <input id="password" type="password" placeholder="*******" />
                 <label>
-                <p id="wrong_password"></p>
-                <p id="login_successful"></p>
+                <!-- <p id="wrong_password"></p>
+                <p id="login_successful"></p> -->
+                <br><br>
                 <input type="submit" id="button" value="LOG IN" />
                 <p id="bottom-line-login-now">Don't have an account? <a href="register.html">Create here</a></p>
 
@@ -91,3 +92,32 @@
 
 </body>
 </html>
+<script>
+     let login=document.querySelector("form")
+    login.addEventListener("submit",(e)=>{
+        e.preventDefault()
+        const data={
+            email:document.getElementById("email").value,
+            pass:document.getElementById("password").value
+        }
+       
+        fetch("http://localhost:8080/users/login",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(data)
+        }).then(res=>res.json())
+        .then(res=>{
+            //console.log(res)
+            alert(res.msg)
+            localStorage.setItem("token",res.token)
+            localStorage.setItem("username",res.name)
+            if(res.token){
+                window.location.assign("index.html")
+            }
+        })
+        .catch(err=>console.log(err))
+    })
+ 
+</script>

@@ -30,7 +30,7 @@
             </label>
             <input id="email" type="email" />
 
-            <p id="wrong_email"></p>
+            <!-- <p id="wrong_email"></p> -->
             <label>
                 <h2>Password</h2>
             </label>
@@ -38,10 +38,11 @@
             <label>
                 <h2>Phone Number*</h2>
             </label>
-            <input id="phoneNo" type="text" />
-            <p id="wrong_password"></p>
+            <input id="phone" type="text" />
+            <br><br>
+            <!-- <p id="wrong_password"></p> -->
 
-            <p id="login_successful"></p>
+            <!-- <p id="login_successful"></p> -->
             <input type="submit" id="button" value="CREATE ACCOUNT/REGISTER" />
             <p id="bottom-line-login-now">Already have an account? <a href="login.html">Log in Now</a></p>
             <div id="bottom">
@@ -103,3 +104,31 @@
     </div>
 </body>
 </html>
+<script>
+       let signup=document.querySelector("form")
+        signup.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        const data={
+            fname:document.getElementById("firstName").value,
+            lname:document.getElementById("lastName").value,
+            email:document.getElementById("email").value,
+            pass:document.getElementById("password").value,
+            phone:document.getElementById("phone").value
+        }
+        fetch("http://localhost:8080/users/register",{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json"
+            },
+            body:JSON.stringify(data)
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            alert("Account created successfully")
+            window.location.assign("login.html")
+        })
+        .catch(err=>{
+            alert("All fields required")
+            console.log(err)})
+    })
+</script>

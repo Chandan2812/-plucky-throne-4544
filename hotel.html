@@ -29,5 +29,132 @@
             <a href=""><i class="fa fa-bus"></i> &nbsp &nbsp Airport Taxis</a>
         </div>
     </div>
+
+    <div id="search">
+        <input type="text" placeholder="City you want to visit">
+        <button>Search</button>
+    </div>
+
+    <div id="container">
+        <div id="filter">
+            <h3>Filter by</h3>
+            <hr>
+            <h4>Your budget</h4>
+            <input type="checkbox">
+            <label for="">₹0-₹300</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="">₹300-₹500</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="">₹500-₹700</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="">₹700-₹1000</label>
+            <br>
+            <br>
+            <input type="checkbox">
+            <label for="">₹1000+</label>
+            <br>
+            <hr>
+           
+            <h4>Star rating</h4>
+            <input type="checkbox">
+            <label for="">1 star</label>
+            <br>
+            <input type="checkbox">
+            <label for="">2 star</label>
+            <br>
+            <input type="checkbox">
+            <label for="">3 star</label>
+            <br>
+            <input type="checkbox">
+            <label for="">4 star</label>
+            <br>
+            <input type="checkbox">
+            <label for="">5 star</label>
+            <br>
+            <hr>
+
+            <h4>available bed</h4>
+            <input type="checkbox">
+            <label for="">1 bed</label>
+            <br>
+            <input type="checkbox">
+            <label for="">2 bed</label>
+            <br>
+            <input type="checkbox">
+            <label for="">3 bed</label>
+            <br>
+            <input type="checkbox">
+            <label for="">4 bed</label>
+            <br>
+            <input type="checkbox">
+            <label for="">5 bed</label>
+            <br>
+        </div>
+        <div id="list">
+
+        </div>
+    </div>
 </body>
 </html>
+
+<script>
+    const getData=()=>{
+        
+        fetch("http://localhost:8080/hotels/",{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            appendData(res)
+        })
+        .catch(err=>console.log(err))
+    }
+    getData();
+    let list=document.getElementById("list")
+
+function appendData(data){
+    list.innerHTML=""
+    data.forEach(element => {
+        let div=document.createElement("div")
+
+        let div1=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=element.image
+
+        let div2=document.createElement("div")
+        let name=document.createElement("h3")
+        name.textContent=element.name
+
+        let address=document.createElement("p")
+        address.textContent=element.address
+
+        let city=document.createElement("p")
+        city.textContent=element.city
+
+        let no_bed=document.createElement("p")
+        no_bed.textContent=element.bed
+
+        let div3=document.createElement("div")
+        let rating=document.createElement("h4")
+        rating.textContent=element.rating
+
+        let price=document.createElement("h3")
+        price.textContent=element.price
+
+        div1.append(img)
+        div2.append(name,address,city,no_bed)
+        div3.append(rating,price)
+        div.append(div1,div2,div3)
+        list.append(div)
+    });
+
+}
+</script>
