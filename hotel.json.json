@@ -14,7 +14,8 @@
         "name":"BNGV Mystic Premier Hotel",
         "Address":"13121 Valley Edge Plaza",
         "city":"Bangalore",
-        "bed":3,"rating":3,
+        "bed":3,
+        "rating":3,
         "image":"https://cf.bstatic.com/xdata/images/hotel/square200/291454874.webp?k=78c8c05331846c01357781c66c9038d9d145accae0bea2fbb81905e6d9dd8fce&o=&s=1",
         "price":730
     },
