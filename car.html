@@ -17,8 +17,8 @@
                 <h4>INR</h4>
                 <img id="ind" src="./imgae/Ind.png" alt="">
                 <h4> List your property</h4>
-                <h4 id="rg"><a href="register.html">Register</a></h4>
-                <h4 id="rg"><a href="login.html">Sign in</a> </h4>
+                <h4 id="rg"><a href="register.html" class="register">Register</a></h4>
+                <h4 id="rg"><a href="login.html" class="login">Sign in</a> </h4>
             </div>
         </div>
         <div id="line2">
@@ -232,3 +232,18 @@
     </div>
 </body>
 </html>
+<script>
+    let userfname=localStorage.getItem("userfname")
+    let userlname=localStorage.getItem("userlname")
+    //console.log(username)
+    let login=document.querySelector(".login")
+    let register=document.querySelector(".register")
+    //console.log(login)
+    if(userfname !=undefined && userlname!=undefined)
+    {
+        register.textContent=`${userfname}\n ${userlname}`
+       login.textContent="Signout"
+       
+      
+    }
+</script>
