@@ -39,7 +39,7 @@ userRouter.post("/login",async(req,res)=>{
                 if(result){
                     let token=jwt.sign({userID:user[0]._id},"masai")
                     console.log(user[0].fname)
-                    res.send({msg:"logged in",token:token,name:user[0].fname})
+                    res.send({msg:"logged in",token:token,fname:user[0].fname,lname:user[0].lname})
                 } 
                 else{
                     res.send({msg:"Wrong credentials"})

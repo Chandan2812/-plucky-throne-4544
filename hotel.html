@@ -16,8 +16,8 @@
                 <h4>INR</h4>
                 <img id="ind" src="./imgae/Ind.png" alt="">
                 <h4> List your property</h4>
-                <h4 id="rg"><a href="register.html">Register</a></h4>
-                <h4 id="rg"><a href="login.html">Sign in</a> </h4>
+                <h4 id="rg"><a href="register.html" class="register">Register</a></h4>
+                <h4 id="rg"><a href="login.html" class="login">Sign in</a> </h4>
             </div>
         </div>
         <div id="line2">
@@ -31,14 +31,38 @@
     </div>
 
     <div id="search">
-        <input type="text" placeholder="City you want to visit">
-        <button>Search</button>
+        <input type="text" id="city" placeholder="City you want to visit">
+        <button id="search">Search</button>
     </div>
 
     <div id="container">
         <div id="filter">
             <h3>Filter by</h3>
             <hr>
+            <h4>Sort by</h4>
+            <select name="" id="sortprice">
+                <option value="">Sort by Price</option>
+                <option value="h2l">High to Low</option>
+                <option value="l2h">Low to High</option>
+            </select>
+           <hr>
+          
+           
+           <h4>bed availability</h4>
+           <input type="checkbox" class="bed" value="1" name="bed">
+           <label for="">1 bed</label>
+           <br>
+           <input type="checkbox" class="bed" value="2" name="bed">
+           <label for="">2 bed</label>
+           <br>
+           <input type="checkbox" class="bed" value="3" name="bed">
+           <label for="">3 bed</label>
+           <br>
+           <input type="checkbox" class="bed" value="4" name="bed">
+           <label for="">4 bed</label>
+           <br>
+           <hr>
+
             <h4>Your budget</h4>
             <input type="checkbox">
             <label for="">₹0-₹300</label>
@@ -59,54 +83,48 @@
             <input type="checkbox">
             <label for="">₹1000+</label>
             <br>
-            <hr>
-           
+            <hr>           
             <h4>Star rating</h4>
-            <input type="checkbox">
-            <label for="">1 star</label>
+           <input type="checkbox" class="star" value="1" name="star">
+           <label for="">1 star</label>
+           <br>
+           <input type="checkbox" class="star" value="2" name="star">
+           <label for="">2 star</label>
+           <br>
+           <input type="checkbox" class="star" value="3" name="star">
+           <label for="">3 star</label>
+           <br>
+           <input type="checkbox" class="star" value="4" name="star">
+           <label for="">4 star</label>
+           <br>
+           <input type="checkbox" class="star" value="5" name="star">
+           <label for="">5 star</label>
+          
+          
             <br>
-            <input type="checkbox">
-            <label for="">2 star</label>
             <br>
-            <input type="checkbox">
-            <label for="">3 star</label>
-            <br>
-            <input type="checkbox">
-            <label for="">4 star</label>
-            <br>
-            <input type="checkbox">
-            <label for="">5 star</label>
-            <br>
-            <hr>
-
-            <h4>available bed</h4>
-            <input type="checkbox">
-            <label for="">1 bed</label>
-            <br>
-            <input type="checkbox">
-            <label for="">2 bed</label>
-            <br>
-            <input type="checkbox">
-            <label for="">3 bed</label>
-            <br>
-            <input type="checkbox">
-            <label for="">4 bed</label>
-            <br>
-            <input type="checkbox">
-            <label for="">5 bed</label>
-            <br>
+            <button id="fil">Apply</button>
         </div>
         <div id="list">
 
+          
         </div>
     </div>
+    <div id="page">
+        <button onclick="getData(1)">1</button>
+        <button onclick="getData(2)">2</button>
+        <button onclick="getData(3)">3</button>
+        <button onclick="getData(4)">4</button>
+        <button onclick="getData(5)">5</button>
+    </div>
+
 </body>
 </html>
 
 <script>
-    const getData=()=>{
+    const getData=(page)=>{
         
-        fetch("http://localhost:8080/hotels/",{
+        fetch(`http://localhost:8080/hotels?page=${page}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
@@ -117,7 +135,7 @@
         })
         .catch(err=>console.log(err))
     }
-    getData();
+    getData(1);
     let list=document.getElementById("list")
 
 function appendData(data){
@@ -134,27 +152,127 @@ function appendData(data){
         name.textContent=element.name
 
         let address=document.createElement("p")
-        address.textContent=element.address
+        address.textContent=element.Address
 
-        let city=document.createElement("p")
+        let city=document.createElement("h4")
         city.textContent=element.city
 
+        let content=document.createElement("p")
+        content.textContent="Breakfast included"
+        content.style.color="green"
+
+        let content2=document.createElement("p")
+        content2.textContent="FREE cancellation • No prepayment needed"
+        content2.style.color="green"
+
         let no_bed=document.createElement("p")
-        no_bed.textContent=element.bed
+        no_bed.textContent=`Bed-${element.bed}`
 
         let div3=document.createElement("div")
         let rating=document.createElement("h4")
-        rating.textContent=element.rating
+        rating.textContent=`${element.rating}-star`
 
         let price=document.createElement("h3")
-        price.textContent=element.price
+        price.textContent=`₹${element.price}`
+
+        let btn=document.createElement("button")
+        btn.textContent="Book Now"
+        btn.addEventListener("click",()=>{
+            let token=localStorage.getItem("token")
+            if(token!==undefined)
+            {
+                window.location.assign("address.html")
+            }
+            else{
+                alert("Please login first")
+            }
+        })
 
         div1.append(img)
-        div2.append(name,address,city,no_bed)
-        div3.append(rating,price)
+        div2.append(name,address,city,content,content2,)
+        div3.append(rating,no_bed,price,btn)
         div.append(div1,div2,div3)
         list.append(div)
     });
 
 }
+let userfname=localStorage.getItem("userfname")
+    let userlname=localStorage.getItem("userlname")
+    //console.log(username)
+    let login=document.querySelector(".login")
+    let register=document.querySelector(".register")
+    //console.log(login)
+    if(userfname !=undefined && userlname!=undefined)
+    {
+        register.textContent=`${userfname}\n ${userlname}`
+        
+       login.textContent="Signout" 
+    }
+    let city=document.getElementById("city")
+    let search=document.getElementById("search")
+    search.addEventListener("click",()=>{
+        data=city.value;
+        //console.log(data)
+         
+        fetch(`http://localhost:8080/hotels/search?q=${data}`,{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            appendData(res)
+        })
+        .catch(err=>console.log(err))
+    })
+
+    let fil=document.getElementById("fil")
+    fil.addEventListener('click',()=>{
+        var bedValue = document.querySelector('.bed:checked').value;
+        console.log(bedValue)
+        fetch(`http://localhost:8080/hotels/bed?q=${bedValue}`,{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            appendData(res)
+        })
+        .catch(err=>console.log(err))
+    })   
+   
+    fil.addEventListener('click',()=>{
+        var starValue = document.querySelector('.star:checked').value;
+        console.log(starValue)
+        fetch(`http://localhost:8080/hotels/star?q=${starValue}`,{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            appendData(res)
+        })
+        .catch(err=>console.log(err))
+    }) 
+   
+        let select=document.querySelector("select")
+        select.addEventListener("change",()=>{
+           let data=select.value
+           //console.log(data)
+
+           fetch(`http://localhost:8080/hotels/sort?q=${data}`,{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+            }).then(res=>res.json())
+            .then(res=>{
+                console.log(res)
+                appendData(res)
+            })
+            .catch(err=>console.log(err))
+        })
+
+
 </script>

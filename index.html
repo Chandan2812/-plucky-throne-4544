@@ -17,7 +17,7 @@
                 <h4>INR</h4>
                 <img id="ind" src="./imgae/Ind.png" alt="">
                 <h4> List your property</h4>
-                <h4 id="rg"><a href="register.html">Register</a></h4>
+                <h4 id="rg"><a href="register.html" class="register">Register</a></h4>
                 <h4 id="rg" ><a href="login.html" class="login">Sign in</a> </h4>
             </div>
         </div>
@@ -39,8 +39,8 @@
     <!-- ---------------------------nav bar-------------------------------- -->
 
     <div id="search">
-        <input type="text" placeholder="Where are you going?">
-        <button>Search</button>
+        <input type="text" id="city" placeholder="Where are you going?">
+        <button id="search">Search</button>
     </div>
 
     <div  id="offer"><img src="./imgae/offer.png" alt=""></div>
@@ -282,9 +282,36 @@
 </body>
 </html>
 <script>
-    let username=localStorage.getItem("username")
+    let userfname=localStorage.getItem("userfname")
+    let userlname=localStorage.getItem("userlname")
     //console.log(username)
     let login=document.querySelector(".login")
-    console.log(login)
-    
+    let register=document.querySelector(".register")
+    //console.log(login)
+    if(userfname !=undefined && userlname!=undefined)
+    {
+        register.textContent=`${userfname}\n ${userlname}`
+       login.textContent="Signout"
+       
+      
+    }
+   
+    let city=document.getElementById("city")
+    let search=document.getElementById("search")
+    search.addEventListener("click",()=>{
+        data=city.value;
+        //console.log(data)
+         
+        fetch(`http://localhost:8080/hotels/search?q=${data}`,{
+            headers:{
+                "Authorization":localStorage.getItem("token")
+            }
+        }).then(res=>res.json())
+        .then(res=>{
+            console.log(res)
+            window.location.assign("hotel.html")
+            appendData(res)
+        })
+        .catch(err=>console.log(err))
+    })
 </script>

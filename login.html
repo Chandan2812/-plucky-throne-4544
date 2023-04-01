@@ -112,7 +112,8 @@
             //console.log(res)
             alert(res.msg)
             localStorage.setItem("token",res.token)
-            localStorage.setItem("username",res.name)
+            localStorage.setItem("userfname",res.fname)
+            localStorage.setItem("userlname",res.lname)
             if(res.token){
                 window.location.assign("index.html")
             }
