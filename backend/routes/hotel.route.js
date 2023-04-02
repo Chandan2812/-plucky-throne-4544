@@ -22,7 +22,7 @@ hotelRouter.get("/bed",async(req,res)=>{
     res.send(hotels)
 })
 
-hotelRouter.get("/star",async(req,res)=>{
+hotelRouter.get("/rating",async(req,res)=>{
     let {q}=req.query
     const hotels=await HotelModel.find({rating:q})
     res.send(hotels)
