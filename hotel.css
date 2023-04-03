@@ -121,6 +121,7 @@ hr{
 }
 #list>div{
     display: flex;
+    justify-content: space-between;
     border: 1px solid rgb(218, 215, 215);
     margin: 20px;
 }
@@ -219,4 +220,27 @@ hr{
     justify-content: space-between;
     width: 60%;
     margin:40px auto;
+}
+@media screen and (max-width:750px)  {
+    #header{
+        height: 360px;
+    }
+    #line2{
+        display: flex;
+        flex-direction: column;
+    }
+    #line3,#line4{
+        display: none;
+    }
+    #container{
+        margin: 0;
+        padding: 0;
+    }
+    #list>div{
+        flex-direction: column;
+    }
+   #anchor{
+    display: none;
+   }
+   
 }

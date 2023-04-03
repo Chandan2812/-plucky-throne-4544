@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#line1a{
+    width: 100%;
+    background-color:#003580;
+}
+#logo{
+    width: 70px;
+    margin-left: 100px;
+}
