@@ -302,7 +302,7 @@
         data=city.value;
         //console.log(data)
          
-        fetch(`http://localhost:8080/hotels/search?q=${data}`,{
+        fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels/search?q=${data}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }

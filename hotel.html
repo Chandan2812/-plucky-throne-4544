@@ -173,7 +173,7 @@
 <script>
     const getData=(page)=>{
         
-        fetch(`http://localhost:8080/hotels?page=${page}`,{
+        fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels?page=${page}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
@@ -266,7 +266,7 @@ let userfname=localStorage.getItem("userfname")
         data=city.value;
         //console.log(data)
          
-        fetch(`http://localhost:8080/hotels/search?q=${data}`,{
+        fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels/search?q=${data}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
@@ -282,7 +282,7 @@ let userfname=localStorage.getItem("userfname")
     fil.addEventListener('click',()=>{
         var bedValue = document.querySelector('.bed:checked').value;
         console.log(bedValue)
-        fetch(`http://localhost:8080/hotels/bed?q=${bedValue}`,{
+        fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels/bed?q=${bedValue}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
@@ -297,7 +297,7 @@ let userfname=localStorage.getItem("userfname")
     fil.addEventListener('click',()=>{
         var starValue = document.querySelector('.star:checked').value;
         console.log(starValue)
-        fetch(`http://localhost:8080/hotels/rating/:${starValue}`,{
+        fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels/rating/:${starValue}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
@@ -314,7 +314,7 @@ let userfname=localStorage.getItem("userfname")
            let data=select.value
            //console.log(data)
 
-           fetch(`http://localhost:8080/hotels/sort?q=${data}`,{
+           fetch(`https://fine-tan-earthworm-sock.cyclic.app/hotels/sort?q=${data}`,{
             headers:{
                 "Authorization":localStorage.getItem("token")
             }
